@@ -44,27 +44,10 @@
       text-align: center;
       margin-top: 2rem;
     }
-    #selector {
-      margin-bottom: 2rem;
-    }
-    #selector select {
-      width: 100%;
-      padding: 0.6rem;
-      font-size: 1rem;
-    }
   </style>
 </head>
 <body>
   <h1>Encuentra tu Ikigai</h1>
-  <div id="selector">
-    <label for="fileSelect">Selecciona el nivel de profundidad:</label>
-    <select id="fileSelect">
-      <option value="data/ikigai_1.json">Nivel 1</option>
-      <option value="data/ikigai_2.json">Nivel 2</option>
-      <option value="data/ikigai_3.json">Nivel 3</option>
-      <option value="data/ikigai_4.json">Nivel 4</option>
-    </select>
-  </div>
   <div id="quiz-container">
     <div class="question" id="question"></div>
     <div class="options" id="options"></div>
@@ -75,8 +58,8 @@
     let currentNode = null;
     let ikigaiData = null;
 
-    async function loadJSON(file) {
-      const response = await fetch(file);
+    async function loadJSON() {
+      const response = await fetch('ikigai.json');
       ikigaiData = await response.json();
       currentNode = ikigaiData;
       renderNode(currentNode);
@@ -113,12 +96,7 @@
       }
     }
 
-    document.getElementById('fileSelect').addEventListener('change', function () {
-      loadJSON(this.value);
-    });
-
-    // Carga inicial por defecto
-    loadJSON(document.getElementById('fileSelect').value);
+    loadJSON();
   </script>
 </body>
 </html>
