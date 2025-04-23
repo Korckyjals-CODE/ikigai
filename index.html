@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Encuentra tu Ikigai</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 600px;
+      margin: 3rem auto;
+      padding: 1rem;
+      background-color: #f2f2f2;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+    }
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+    .question {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .options button {
+      display: block;
+      width: 100%;
+      margin: 0.5rem 0;
+      padding: 0.8rem;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #4caf50;
+      color: white;
+      cursor: pointer;
+    }
+    .options button:hover {
+      background-color: #45a049;
+    }
+    .result {
+      font-weight: bold;
+      font-size: 1.2rem;
+      color: #222;
+      text-align: center;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <h1>Encuentra tu Ikigai</h1>
+  <div id="quiz-container">
+    <div class="question" id="question"></div>
+    <div class="options" id="options"></div>
+    <div class="result" id="result"></div>
+  </div>
+
+  <script>
+    let currentNode = null;
+    let ikigaiData = null;
+
+    async function loadJSON() {
+      const response = await fetch('ikigai.json');
+      ikigaiData = await response.json();
+      currentNode = ikigaiData;
+      renderNode(currentNode);
+    }
+
+    function renderNode(node) {
+      const questionEl = document.getElementById('question');
+      const optionsEl = document.getElementById('options');
+      const resultEl = document.getElementById('result');
+
+      questionEl.textContent = node.question || '';
+      optionsEl.innerHTML = '';
+      resultEl.textContent = '';
+
+      if (node.result) {
+        resultEl.textContent = node.result;
+        return;
+      }
+
+      if (node.type === 'binary') {
+        ['yes', 'no'].forEach((key) => {
+          const btn = document.createElement('button');
+          btn.textContent = key === 'yes' ? 'Sí' : 'No';
+          btn.onclick = () => renderNode(node.options[key]);
+          optionsEl.appendChild(btn);
+        });
+      } else if (node.type === 'options') {
+        for (let key in node.options) {
+          const btn = document.createElement('button');
+          btn.textContent = key.charAt(0).toUpperCase() + key.slice(1);
+          btn.onclick = () => renderNode(node.options[key]);
+          optionsEl.appendChild(btn);
+        }
+      }
+    }
+
+    loadJSON();
+  </script>
+</body>
+</html>
