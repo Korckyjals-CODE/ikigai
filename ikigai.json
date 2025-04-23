@@ -1,121 +1,202 @@
 {
-  "question": "¿Disfrutas ayudar a otras personas?",
+  "question": "Â¿Disfrutas ayudar a otras personas?",
   "type": "binary",
   "options": {
     "yes": {
-      "question": "¿Te gusta enseñar lo que sabes?",
+      "question": "Â¿Te gusta enseÃ±ar lo que sabes?",
       "type": "binary",
       "options": {
         "yes": {
-          "question": "¿Prefieres enseñar a niños o a adultos?",
+          "question": "Â¿Prefieres enseÃ±ar a niÃ±os o a adultos?",
           "type": "options",
           "options": {
-            "niños": {
-              "question": "¿Qué opción prefieres entre las siguientes áreas?",
+            "niÃ±os": {
+              "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
               "type": "options",
               "options": {
-                "podrías ser maestro de primaria": {
-                  "result": "Podrías ser maestro de primaria"
+                "podrÃ­as ser maestro de primaria": {
+                  "result": "PodrÃ­as ser maestro de primaria"
                 },
                 "educador montessori o animador educativo": {
-                  "result": "educador Montessori o animador educativo"
+                  "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                  "type": "options",
+                  "options": {
+                    "educador montessori": {
+                      "result": "educador Montessori"
+                    },
+                    "animador educativo": {
+                      "result": "animador educativo"
+                    }
+                  }
                 }
               }
             },
             "adultos": {
-              "question": "¿Qué opción prefieres entre las siguientes áreas?",
+              "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
               "type": "options",
               "options": {
-                "podrías ser capacitador empresarial": {
-                  "result": "Podrías ser capacitador empresarial"
+                "podrÃ­as ser capacitador empresarial": {
+                  "result": "PodrÃ­as ser capacitador empresarial"
                 },
                 "instructor de cursos online o coach de vida": {
-                  "result": "instructor de cursos online o coach de vida"
+                  "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                  "type": "options",
+                  "options": {
+                    "instructor de cursos online": {
+                      "result": "instructor de cursos online"
+                    },
+                    "coach de vida": {
+                      "result": "coach de vida"
+                    }
+                  }
                 }
               }
             }
           }
         },
         "no": {
-          "question": "¿Te interesa cuidar físicamente de otras personas?",
+          "question": "Â¿Te interesa cuidar fÃ­sicamente de otras personas?",
           "type": "binary",
           "options": {
             "yes": {
-              "question": "¿Prefieres apoyar a adultos mayores, niños o personas con discapacidad?",
+              "question": "Â¿Prefieres apoyar a adultos mayores, niÃ±os o personas con discapacidad?",
               "type": "options",
               "options": {
                 "adultos mayores": {
-                  "question": "¿Cuál de estas formas de ayuda prefieres brindar?",
+                  "question": "Â¿CuÃ¡l de estas formas de ayuda prefieres brindar?",
                   "type": "options",
                   "options": {
-                    "podrías ser cuidador geriátrico": {
-                      "result": "Podrías ser cuidador geriátrico"
+                    "podrÃ­as ser cuidador geriÃ¡trico": {
+                      "result": "PodrÃ­as ser cuidador geriÃ¡trico"
                     },
-                    "acompañante terapéutico o enfermero domiciliario": {
-                      "result": "acompañante terapéutico o enfermero domiciliario"
+                    "acompaÃ±ante terapÃ©utico o enfermero domiciliario": {
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "acompaÃ±ante terapÃ©utico": {
+                          "result": "acompaÃ±ante terapÃ©utico"
+                        },
+                        "enfermero domiciliario": {
+                          "result": "enfermero domiciliario"
+                        }
+                      }
                     }
                   }
                 },
-                "niños": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                "niÃ±os": {
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser niñero profesional": {
-                      "result": "Podrías ser niñero profesional"
+                    "podrÃ­as ser niÃ±ero profesional": {
+                      "result": "PodrÃ­as ser niÃ±ero profesional"
                     },
-                    "auxiliar de guardería o educador especial": {
-                      "result": "auxiliar de guardería o educador especial"
+                    "auxiliar de guarderÃ­a o educador especial": {
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "auxiliar de guarderÃ­a": {
+                          "result": "auxiliar de guarderÃ­a"
+                        },
+                        "educador especial": {
+                          "result": "educador especial"
+                        }
+                      }
                     }
                   }
                 },
                 "personas con discapacidad": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser asistente personal": {
-                      "result": "Podrías ser asistente personal"
+                    "podrÃ­as ser asistente personal": {
+                      "result": "PodrÃ­as ser asistente personal"
                     },
                     "terapeuta ocupacional o cuidador especializado": {
-                      "result": "terapeuta ocupacional o cuidador especializado"
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "terapeuta ocupacional": {
+                          "result": "terapeuta ocupacional"
+                        },
+                        "cuidador especializado": {
+                          "result": "cuidador especializado"
+                        }
+                      }
                     }
                   }
                 }
               }
             },
             "no": {
-              "question": "¿Prefieres hablar con personas o escribirles?",
+              "question": "Â¿Prefieres hablar con personas o escribirles?",
               "type": "options",
               "options": {
                 "hablar": {
-                  "question": "¿Te sientes cómodo atendiendo llamadas o prefieres atención presencial?",
+                  "question": "Â¿Te sientes cÃ³modo atendiendo llamadas o prefieres atenciÃ³n presencial?",
                   "type": "options",
                   "options": {
                     "llamadas": {
-                      "result": "Podrías ser operador de call center o soporte telefónico"
-                    },
-                    "presencial": {
-                      "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
                       "type": "options",
                       "options": {
-                        "podrías ser recepcionista": {
-                          "result": "Podrías ser recepcionista"
+                        "podrÃ­as ser operador de call center": {
+                          "result": "PodrÃ­as ser operador de call center"
                         },
-                        "anfitrión o asistente de atención al cliente": {
-                          "result": "anfitrión o asistente de atención al cliente"
+                        "soporte telefÃ³nico": {
+                          "result": "soporte telefÃ³nico"
+                        }
+                      }
+                    },
+                    "presencial": {
+                      "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
+                      "type": "options",
+                      "options": {
+                        "podrÃ­as ser recepcionista": {
+                          "result": "PodrÃ­as ser recepcionista"
+                        },
+                        "anfitriÃ³n o asistente de atenciÃ³n al cliente": {
+                          "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                          "type": "options",
+                          "options": {
+                            "anfitriÃ³n": {
+                              "result": "anfitriÃ³n"
+                            },
+                            "asistente de atenciÃ³n al cliente": {
+                              "result": "asistente de atenciÃ³n al cliente"
+                            }
+                          }
                         }
                       }
                     }
                   }
                 },
                 "escribir": {
-                  "question": "¿Te interesa resolver problemas técnicos o dar seguimiento a pedidos?",
+                  "question": "Â¿Te interesa resolver problemas tÃ©cnicos o dar seguimiento a pedidos?",
                   "type": "options",
                   "options": {
-                    "problemas técnicos": {
-                      "result": "Podrías ser agente de soporte técnico por chat o email"
+                    "problemas tÃ©cnicos": {
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "podrÃ­as ser agente de soporte tÃ©cnico por chat": {
+                          "result": "PodrÃ­as ser agente de soporte tÃ©cnico por chat"
+                        },
+                        "email": {
+                          "result": "email"
+                        }
+                      }
                     },
                     "seguimiento a pedidos": {
-                      "result": "Podrías ser agente de servicio postventa o gestor de órdenes"
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "podrÃ­as ser agente de servicio postventa": {
+                          "result": "PodrÃ­as ser agente de servicio postventa"
+                        },
+                        "gestor de Ã³rdenes": {
+                          "result": "gestor de Ã³rdenes"
+                        }
+                      }
                     }
                   }
                 }
@@ -126,68 +207,104 @@
       }
     },
     "no": {
-      "question": "¿Disfrutas crear cosas con tus manos?",
+      "question": "Â¿Disfrutas crear cosas con tus manos?",
       "type": "binary",
       "options": {
         "yes": {
-          "question": "¿Prefieres trabajar con materiales naturales o tecnológicos?",
+          "question": "Â¿Prefieres trabajar con materiales naturales o tecnolÃ³gicos?",
           "type": "options",
           "options": {
             "naturales": {
-              "question": "¿Te gusta más lo artístico o lo funcional?",
+              "question": "Â¿Te gusta mÃ¡s lo artÃ­stico o lo funcional?",
               "type": "options",
               "options": {
-                "artístico": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                "artÃ­stico": {
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser ceramista": {
-                      "result": "Podrías ser ceramista"
+                    "podrÃ­as ser ceramista": {
+                      "result": "PodrÃ­as ser ceramista"
                     },
                     "escultor o joyero artesanal": {
-                      "result": "escultor o joyero artesanal"
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "escultor": {
+                          "result": "escultor"
+                        },
+                        "joyero artesanal": {
+                          "result": "joyero artesanal"
+                        }
+                      }
                     }
                   }
                 },
                 "funcional": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser carpintero": {
-                      "result": "Podrías ser carpintero"
+                    "podrÃ­as ser carpintero": {
+                      "result": "PodrÃ­as ser carpintero"
                     },
                     "ebanista o fabricante de muebles": {
-                      "result": "ebanista o fabricante de muebles"
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "ebanista": {
+                          "result": "ebanista"
+                        },
+                        "fabricante de muebles": {
+                          "result": "fabricante de muebles"
+                        }
+                      }
                     }
                   }
                 }
               }
             },
-            "tecnológicos": {
-              "question": "¿Te interesa más reparar que crear desde cero?",
+            "tecnolÃ³gicos": {
+              "question": "Â¿Te interesa mÃ¡s reparar que crear desde cero?",
               "type": "binary",
               "options": {
                 "yes": {
-                  "question": "¿Qué tipo de soporte técnico prefieres ofrecer?",
+                  "question": "Â¿QuÃ© tipo de soporte tÃ©cnico prefieres ofrecer?",
                   "type": "options",
                   "options": {
-                    "podrías ser técnico en electrónica": {
-                      "result": "Podrías ser técnico en electrónica"
+                    "podrÃ­as ser tÃ©cnico en electrÃ³nica": {
+                      "result": "PodrÃ­as ser tÃ©cnico en electrÃ³nica"
                     },
-                    "reparador de celulares o técnico de electrodomésticos": {
-                      "result": "reparador de celulares o técnico de electrodomésticos"
+                    "reparador de celulares o tÃ©cnico de electrodomÃ©sticos": {
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "reparador de celulares": {
+                          "result": "reparador de celulares"
+                        },
+                        "tÃ©cnico de electrodomÃ©sticos": {
+                          "result": "tÃ©cnico de electrodomÃ©sticos"
+                        }
+                      }
                     }
                   }
                 },
                 "no": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser creador de gadgets": {
-                      "result": "Podrías ser creador de gadgets"
+                    "podrÃ­as ser creador de gadgets": {
+                      "result": "PodrÃ­as ser creador de gadgets"
                     },
-                    "diseñador 3d o impresor digital": {
-                      "result": "diseñador 3D o impresor digital"
+                    "diseÃ±ador 3d o impresor digital": {
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "diseÃ±ador 3d": {
+                          "result": "diseÃ±ador 3D"
+                        },
+                        "impresor digital": {
+                          "result": "impresor digital"
+                        }
+                      }
                     }
                   }
                 }
@@ -196,162 +313,252 @@
           }
         },
         "no": {
-          "question": "¿Te emociona aprender sobre nuevas tecnologías?",
+          "question": "Â¿Te emociona aprender sobre nuevas tecnologÃ­as?",
           "type": "binary",
           "options": {
             "yes": {
-              "question": "¿Prefieres programar, diseñar o analizar datos?",
+              "question": "Â¿Prefieres programar, diseÃ±ar o analizar datos?",
               "type": "options",
               "options": {
                 "programar": {
-                  "question": "¿En qué área del desarrollo tecnológico prefieres especializarte?",
+                  "question": "Â¿En quÃ© Ã¡rea del desarrollo tecnolÃ³gico prefieres especializarte?",
                   "type": "options",
                   "options": {
-                    "podrías ser desarrollador frontend": {
-                      "result": "Podrías ser desarrollador frontend"
+                    "podrÃ­as ser desarrollador frontend": {
+                      "result": "PodrÃ­as ser desarrollador frontend"
                     },
                     "backend o fullstack": {
-                      "result": "backend o fullstack"
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "backend": {
+                          "result": "backend"
+                        },
+                        "fullstack": {
+                          "result": "fullstack"
+                        }
+                      }
                     }
                   }
                 },
-                "diseñar": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                "diseÃ±ar": {
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser diseñador ux/ui": {
-                      "result": "Podrías ser diseñador UX/UI"
+                    "podrÃ­as ser diseÃ±ador ux/ui": {
+                      "result": "PodrÃ­as ser diseÃ±ador UX/UI"
                     },
                     "especialista en experiencia de usuario o creador de interfaces": {
-                      "result": "especialista en experiencia de usuario o creador de interfaces"
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "especialista en experiencia de usuario": {
+                          "result": "especialista en experiencia de usuario"
+                        },
+                        "creador de interfaces": {
+                          "result": "creador de interfaces"
+                        }
+                      }
                     }
                   }
                 },
                 "analizar datos": {
-                  "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                  "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                   "type": "options",
                   "options": {
-                    "podrías ser analista de datos": {
-                      "result": "Podrías ser analista de datos"
+                    "podrÃ­as ser analista de datos": {
+                      "result": "PodrÃ­as ser analista de datos"
                     },
-                    "científico de datos o consultor bi": {
-                      "result": "científico de datos o consultor BI"
+                    "cientÃ­fico de datos o consultor bi": {
+                      "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                      "type": "options",
+                      "options": {
+                        "cientÃ­fico de datos": {
+                          "result": "cientÃ­fico de datos"
+                        },
+                        "consultor bi": {
+                          "result": "consultor BI"
+                        }
+                      }
                     }
                   }
                 }
               }
             },
             "no": {
-              "question": "¿Se te facilita explicar ideas complejas con claridad?",
+              "question": "Â¿Se te facilita explicar ideas complejas con claridad?",
               "type": "binary",
               "options": {
                 "yes": {
-                  "question": "¿Tienes buena ortografía y redacción?",
+                  "question": "Â¿Tienes buena ortografÃ­a y redacciÃ³n?",
                   "type": "binary",
                   "options": {
                     "yes": {
-                      "question": "¿Qué tipo de soporte técnico prefieres ofrecer?",
+                      "question": "Â¿QuÃ© tipo de soporte tÃ©cnico prefieres ofrecer?",
                       "type": "options",
                       "options": {
-                        "podrías ser redactor técnico": {
-                          "result": "Podrías ser redactor técnico"
+                        "podrÃ­as ser redactor tÃ©cnico": {
+                          "result": "PodrÃ­as ser redactor tÃ©cnico"
                         },
                         "guionista educativo o creador de manuales": {
-                          "result": "guionista educativo o creador de manuales"
+                          "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                          "type": "options",
+                          "options": {
+                            "guionista educativo": {
+                              "result": "guionista educativo"
+                            },
+                            "creador de manuales": {
+                              "result": "creador de manuales"
+                            }
+                          }
                         }
                       }
                     },
                     "no": {
-                      "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                      "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                       "type": "options",
                       "options": {
-                        "podrías ser conferencista": {
-                          "result": "Podrías ser conferencista"
+                        "podrÃ­as ser conferencista": {
+                          "result": "PodrÃ­as ser conferencista"
                         },
                         "presentador o facilitador de talleres": {
-                          "result": "presentador o facilitador de talleres"
+                          "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                          "type": "options",
+                          "options": {
+                            "presentador": {
+                              "result": "presentador"
+                            },
+                            "facilitador de talleres": {
+                              "result": "facilitador de talleres"
+                            }
+                          }
                         }
                       }
                     }
                   }
                 },
                 "no": {
-                  "question": "¿Tienes habilidades manuales o artísticas?",
+                  "question": "Â¿Tienes habilidades manuales o artÃ­sticas?",
                   "type": "binary",
                   "options": {
                     "yes": {
-                      "question": "¿Prefieres trabajar con diseño visual o construcción de objetos?",
+                      "question": "Â¿Prefieres trabajar con diseÃ±o visual o construcciÃ³n de objetos?",
                       "type": "options",
                       "options": {
-                        "diseño visual": {
-                          "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                        "diseÃ±o visual": {
+                          "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                           "type": "options",
                           "options": {
-                            "podrías ser diseñador gráfico": {
-                              "result": "Podrías ser diseñador gráfico"
+                            "podrÃ­as ser diseÃ±ador grÃ¡fico": {
+                              "result": "PodrÃ­as ser diseÃ±ador grÃ¡fico"
                             },
                             "ilustrador digital o editor multimedia": {
-                              "result": "ilustrador digital o editor multimedia"
+                              "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                              "type": "options",
+                              "options": {
+                                "ilustrador digital": {
+                                  "result": "ilustrador digital"
+                                },
+                                "editor multimedia": {
+                                  "result": "editor multimedia"
+                                }
+                              }
                             }
                           }
                         },
-                        "construcción": {
-                          "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                        "construcciÃ³n": {
+                          "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                           "type": "options",
                           "options": {
-                            "podrías ser modelista": {
-                              "result": "Podrías ser modelista"
+                            "podrÃ­as ser modelista": {
+                              "result": "PodrÃ­as ser modelista"
                             },
-                            "técnico de prototipos o constructor artesanal": {
-                              "result": "técnico de prototipos o constructor artesanal"
+                            "tÃ©cnico de prototipos o constructor artesanal": {
+                              "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                              "type": "options",
+                              "options": {
+                                "tÃ©cnico de prototipos": {
+                                  "result": "tÃ©cnico de prototipos"
+                                },
+                                "constructor artesanal": {
+                                  "result": "constructor artesanal"
+                                }
+                              }
                             }
                           }
                         }
                       }
                     },
                     "no": {
-                      "question": "¿Tienes facilidad para aprender lenguajes, como idiomas o programación?",
+                      "question": "Â¿Tienes facilidad para aprender lenguajes, como idiomas o programaciÃ³n?",
                       "type": "binary",
                       "options": {
                         "yes": {
-                          "question": "¿Te interesan más los idiomas humanos o los lenguajes de computadoras?",
+                          "question": "Â¿Te interesan mÃ¡s los idiomas humanos o los lenguajes de computadoras?",
                           "type": "options",
                           "options": {
                             "idiomas humanos": {
-                              "question": "¿En qué área de idiomas te gustaría trabajar?",
+                              "question": "Â¿En quÃ© Ã¡rea de idiomas te gustarÃ­a trabajar?",
                               "type": "options",
                               "options": {
-                                "podrías ser traductor": {
-                                  "result": "Podrías ser traductor"
+                                "podrÃ­as ser traductor": {
+                                  "result": "PodrÃ­as ser traductor"
                                 },
-                                "profesor de idiomas o guía turístico": {
-                                  "result": "profesor de idiomas o guía turístico"
+                                "profesor de idiomas o guÃ­a turÃ­stico": {
+                                  "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                                  "type": "options",
+                                  "options": {
+                                    "profesor de idiomas": {
+                                      "result": "profesor de idiomas"
+                                    },
+                                    "guÃ­a turÃ­stico": {
+                                      "result": "guÃ­a turÃ­stico"
+                                    }
+                                  }
                                 }
                               }
                             },
                             "lenguajes de computadoras": {
-                              "question": "¿En qué área del desarrollo tecnológico prefieres especializarte?",
+                              "question": "Â¿En quÃ© Ã¡rea del desarrollo tecnolÃ³gico prefieres especializarte?",
                               "type": "options",
                               "options": {
-                                "podrías ser programador": {
-                                  "result": "Podrías ser programador"
+                                "podrÃ­as ser programador": {
+                                  "result": "PodrÃ­as ser programador"
                                 },
                                 "tester de software o desarrollador de apps": {
-                                  "result": "tester de software o desarrollador de apps"
+                                  "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                                  "type": "options",
+                                  "options": {
+                                    "tester de software": {
+                                      "result": "tester de software"
+                                    },
+                                    "desarrollador de apps": {
+                                      "result": "desarrollador de apps"
+                                    }
+                                  }
                                 }
                               }
                             }
                           }
                         },
                         "no": {
-                          "question": "¿Qué opción prefieres entre las siguientes áreas?",
+                          "question": "Â¿QuÃ© opciÃ³n prefieres entre las siguientes Ã¡reas?",
                           "type": "options",
                           "options": {
-                            "podrías explorar actividades prácticas como logística": {
-                              "result": "Podrías explorar actividades prácticas como logística"
+                            "podrÃ­as explorar actividades prÃ¡cticas como logÃ­stica": {
+                              "result": "PodrÃ­as explorar actividades prÃ¡cticas como logÃ­stica"
                             },
                             "ventas o apoyo administrativo": {
-                              "result": "ventas o apoyo administrativo"
+                              "question": "Â¿CuÃ¡l de estas opciones se ajusta mÃ¡s a lo que deseas hacer?",
+                              "type": "options",
+                              "options": {
+                                "ventas": {
+                                  "result": "ventas"
+                                },
+                                "apoyo administrativo": {
+                                  "result": "apoyo administrativo"
+                                }
+                              }
                             }
                           }
                         }
